@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHUC STORE - Trang Chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <img src="images/logo.png" alt="PHUC STORE Logo" class="logo-img">
+                <a href="index.html" class="logo-text">PHUC STORE</a>
+            </div>
+            <i class="fas fa-bars hamburger" onclick="toggleMenu()"></i>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Trang Chủ</a>
+                <a href="products.html">Sản Phẩm</a>
+                <a href="about.html">Giới Thiệu</a>
+                <a href="contact.html">Liên Hệ</a>
+                <a href="login.html" class="icon-link">
+                    <img src="images/sss1.png" alt="Login" class="icon">
+                    <span>Đăng Nhập</span>
+                </a>
+                <a href="cart.html" class="icon-link">
+                    <img src="images/sss2.png" alt="Cart" class="icon">
+                    <span>Giỏ Hàng</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Chào Mừng Đến Với PHUC STORE</h1>
+            <p>Khám phá bộ sưu tập laptop hiện đại, mạnh mẽ với giá cả hợp lý!</p>
+            <a href="products.html" class="btn-buy">Mua Ngay</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+            <div class="product-grid" id="featured-products">
+                <!-- Sản phẩm sẽ được chèn bởi JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Laptop">
+            <ul id="modal-specs"></ul>
+            <p id="modal-price"></p>
+            <div class="modal-buttons">
+                <button onclick="addToCartFromModal()" class="btn-primary">Thêm vào giỏ</button>
+                <button onclick="closeModal()" class="btn-secondary">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Liên Hệ</h4>
+                <p>Địa chỉ: 1234 Đường Laptop, Quận 1, TP.HCM</p>
+                <p>Điện thoại: +84 123 456 789</p>
+                <p>Email: support@laptopstore.com</p>
+            </div>
+            <div>
+                <h4>Theo Dõi Chúng Tôi</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Về Chúng Tôi</h4>
+                <p>Cửa hàng chuyên cung cấp laptop chất lượng cao, bảo hành lâu dài với giá tốt nhất.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
